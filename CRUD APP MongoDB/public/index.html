@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parentBox">
+      <div class="leftBox">
+        <form id="productForm">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            id="name"
+            class="formInput"
+            name="name"
+            required
+          />
+
+          <label for="fathername">Father's Name:</label>
+          <input
+            type="text"
+            placeholder="Enter Your Father's Name"
+            id="fathername"
+            class="formInput"
+            name="fathername"
+            required
+          />
+
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            placeholder="Enter Your Age"
+            id="age"
+            class="formInput"
+            name="age"
+            required
+          />
+
+          <label for="gender">Gender:</label>
+          <!-- <input
+            type="text"
+            placeholder="Enter Your Gender"
+            id="gender"
+            class="formInput"
+            name="gender"
+            required
+          /> -->
+          <select required class="formInput" name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <button class="formButton" type="submit">Add Product</button>
+        </form>
+      </div>
+      <div class="rightBox">
+        <div class="mainBox">
+          <table>
+            <thead class="thead">
+              <tr class="theadings">
+                <th>Name</th>
+                <th>Father's Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <!-- <tr class="titems">
+                <td>Name</td>
+                <td>Father's Name</td>
+                <td>Age</td>
+                <td><button class="editButton">Edit</button></td>
+                <td><button class="deleteButton">Delete</button></td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.mjs"></script>
+  </body>
+</html>

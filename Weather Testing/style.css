@@ -1,0 +1,119 @@
+/* @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css); */
+
+/* '20px': 20px; */
+
+* {
+  margin: 0;
+}
+body {
+  background-color: #a64253;
+  font-family: cursive;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 0px 20px;
+}
+
+form {
+  gap: 30px;
+  display: grid;
+  place-items: center;
+  max-width: 800px;
+  width: 100%;
+  /* margin-left: 40px; */
+  /* margin-right: 40px; */
+}
+
+.widget {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* min-width: 500px; */
+  height: 100%;
+  min-height: 350px;
+  /* height: 300px; */
+  /* flex-wrap: wrap; */
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
+    0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+.weatherIcon {
+  height: 60%;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 100px;
+}
+.weatherInfo {
+  height: 40%;
+  width: 100%;
+  background: #080705;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.temperature {
+  /* flex: 0 0 40%; */
+  width: 50%;
+  font-size: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  /* flex: 0 100%; */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* height: 100%; */
+  justify-content: center;
+}
+.weatherCondition {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.flex {
+  color: white;
+  gap: 10px;
+  /* margin-top: 40px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#input {
+  margin: auto;
+}
+
+@media (max-width: 400px) {
+  .weatherInfo {
+    /* display: block; */
+    flex-direction: column;
+    justify-content: center;
+  }
+  .widget {
+    min-height: 500px;
+  }
+  .temperature,
+  .description {
+    width: 100%;
+    text-align: center;
+  }
+form {
+  max-width: 300px;
+}
+body {
+  padding: 40px 20px;
+  height: 100%;
+}
+.weatherInfo, .weatherIcon {
+  height: 50%;
+}
+}

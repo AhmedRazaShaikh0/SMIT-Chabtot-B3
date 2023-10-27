@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const fizzBuzz = (num) => {
+        let ans = [];
+        for (let i = 1; i <= num; i++) {
+          if (i % 3 == 0 && i % 5 == 0) {
+            ans.push("FizzBuzz");
+          } else if (i % 3 == 0 && i % 5 != 0) {
+            ans.push("Fizz");
+          } else if (i % 3 != 0 && i % 5 == 0) {
+            ans.push("Buzz");
+          } else {
+            ans.push(i + "");
+          }
+        }
+        return ans;
+      };
+      fizzBuzz();
+    </script>
+  </body>
+</html>
